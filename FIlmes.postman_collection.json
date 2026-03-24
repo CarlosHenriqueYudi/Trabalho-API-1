@@ -1,0 +1,66 @@
+{
+  "info": {
+    "_postman_id": "3472f10b-394e-4f5d-8c74-9c3bfc72a39c",
+    "name": "FIlmes",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "53315693",
+    "_collection_link": "https://go.postman.co/collection/53315693-3472f10b-394e-4f5d-8c74-9c3bfc72a39c?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Get",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/filmes?ordenar=nome",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "filmes"
+          ],
+          "query": [
+            {
+              "key": "ordenar",
+              "value": "nome"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Post",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"titulo\": \"Fragmentado\",\r\n    \"diretor\": \"M. Night Shyamalan\",\r\n    \"ano\": 2016,\r\n    \"genero\": \"Suspense\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/api/filmes",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "filmes"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
